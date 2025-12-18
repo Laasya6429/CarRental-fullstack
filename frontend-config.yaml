@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: frontend-config
+  namespace: app-prod
+data:
+  NEXT_PUBLIC_BACKEND_API: "http:k8s-appprod-appingre-09c520623f-309907616.ap-south-1.elb.amazonaws.com"
